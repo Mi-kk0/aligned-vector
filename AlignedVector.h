@@ -110,11 +110,11 @@ public:
         return pStart;
     }
 
-    T& operator[](std::size_t index) const {
+    const T& operator[](std::size_t index) const {
         return pStart[index];
     }
 
-    T&& operator[](std::size_t index) {
+    T& operator[](std::size_t index) {
         return pStart[index];
     }
 
